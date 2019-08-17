@@ -36,18 +36,10 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_name = gets.strip
-  songs.each do |song|
-    if song.include?(song_name) || (song_name == song)
-      puts "Playing #{song}"
-      elsif !song.include?(song_name) 
-      puts "Invalid input, please try again"
-    end
-  end
-  # if songs.include?(song_name)
-  #   puts "Playing #{song_name}"
-  # else
-  #   puts "Invalid input, please try again"
-  # end
+  if songs.include?(song_name)
+    puts "Playing #{song_name}"
+    else puts "Invalid input, please try again"
+      end
 end
 
 def exit_jukebox
