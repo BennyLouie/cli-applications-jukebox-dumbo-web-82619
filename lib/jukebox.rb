@@ -40,7 +40,7 @@ def play(songs)
   song_name = gets.strip
   indices = []
   songs.each_with_index do |song, index|
-    indices.push(index)
+    indices.push(index + 1)
   end
   binding.pry
   if songs.include?(song_name) || indices.include?(song_name)
