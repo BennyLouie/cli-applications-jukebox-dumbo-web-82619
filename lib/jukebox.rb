@@ -40,7 +40,7 @@ def play(songs)
   songs.each_with_index do |song, index|
     indices.push(index)
   end
-  if songs.include?(song_name) || index.include?(song_name)
+  if songs.include?(song_name) || indices.include?(song_name)
     puts "Playing #{song_name}"
     elsif !songs.include?(song_name)
     puts "Invalid input, please try again"
