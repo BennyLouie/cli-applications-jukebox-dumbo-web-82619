@@ -42,7 +42,6 @@ def play(songs)
   songs.each_with_index do |song, index|
     indices.push((index + 1).to_s)
   end
-  binding.pry
   if songs.include?(song_name) || indices.include?(song_name)
     puts "Playing #{song_name}"
     elsif !songs.include?(song_name)
