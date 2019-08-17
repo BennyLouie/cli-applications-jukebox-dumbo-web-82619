@@ -38,8 +38,9 @@ def play(songs)
   song_name = gets.strip
   if songs.include?(song_name)
     puts "Playing #{song_name}"
-    else puts "Invalid input, please try again"
-      end
+  else
+    puts "Invalid input, please try again"
+  end
 end
 
 def exit_jukebox
