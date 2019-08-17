@@ -1,3 +1,5 @@
+require 'pry'
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -40,6 +42,7 @@ def play(songs)
   songs.each_with_index do |song, index|
     indices.push(index)
   end
+  binding.pry
   if songs.include?(song_name) || indices.include?(song_name)
     puts "Playing #{song_name}"
     elsif !songs.include?(song_name)
