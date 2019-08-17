@@ -36,9 +36,9 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_name = gets.strip
-  index = []
+  indices = []
   songs.each_with_index do |song, index|
-    index.push(index)
+    indices.push(index)
   end
   if songs.include?(song_name) || index.include?(song_name)
     puts "Playing #{song_name}"
