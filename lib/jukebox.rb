@@ -39,13 +39,15 @@ def play(songs)
   songs.each do |song|
     if song.include?(song_name)
       puts "Playing #{song}"
+    else
+      puts "Invalid input, please try again"
     end
   end
-  if songs.include?(song_name)
-    puts "Playing #{song_name}"
-  else
-    puts "Invalid input, please try again"
-  end
+  # if songs.include?(song_name)
+  #   puts "Playing #{song_name}"
+  # else
+  #   puts "Invalid input, please try again"
+  # end
 end
 
 def exit_jukebox
