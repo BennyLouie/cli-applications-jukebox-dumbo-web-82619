@@ -36,10 +36,12 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_name = gets.strip
-  if songs.include?(song_name) || (song_name == songs.length)
-    puts "Playing #{song_name}"
-  else
-    puts "Invalid input, please try again"
+  songs.each do |song|
+    if song.include?(song_name)
+      puts "Playing #{song}"
+    else
+      puts "Invalid input, please try again"
+    end
   end
 end
 
