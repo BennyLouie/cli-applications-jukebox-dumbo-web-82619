@@ -60,16 +60,16 @@ def run
   user_input = gets.strip
   if user_input == "exit"
     exit_jukebox
-    if user_input != "exit"
-      run
-      if user_input == "help"
-        help
-        elsif user_input == "list"
-        list(songs)
-        elsif user_input == "play"
-        play(songs)
-      end
-    end
+  end
+  if user_input != "exit"
+    run
+  end
+  if user_input == "help"
+    help
+    elsif user_input == "list"
+    list(songs)
+    elsif user_input == "play"
+    play(songs)
   end
 end
 
