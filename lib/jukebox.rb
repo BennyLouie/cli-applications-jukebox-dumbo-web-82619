@@ -65,10 +65,10 @@ def run(user_input)
     help
   end
   if user_input == "list"
-    list(user_input)
+    list(songs)
   end
   if user_input == "play"
-    play(user_input)
+    play(songs)
   end
 end
 
