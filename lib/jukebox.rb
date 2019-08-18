@@ -66,9 +66,11 @@ def run(user_input)
   # end
   if user_input == "help"
     help
-    elsif user_input == "list"
+  end
+  if user_input == "list"
     list(songs)
-    elsif user_input == "play"
+  end
+  if user_input == "play"
     play(songs)
   end
 end
