@@ -59,7 +59,7 @@ def run
   puts "Please enter a command:"
   user_input = gets.strip
   if user_input == "exit"
-    return exit_jukebox
+    exit_jukebox
   end
   if user_input != "exit"
     run
