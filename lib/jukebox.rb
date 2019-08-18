@@ -61,9 +61,6 @@ def run(user_input)
   if user_input == "exit"
     exit_jukebox
   end
-  # if user_input != "exit"
-  #   run
-  # end
   if user_input == "help"
     help
   end
