@@ -49,7 +49,7 @@ def play(songs)
     elsif !songs.include?(song_name)
     puts "Invalid input, please try again"
   end
-  binding.pry
+
 end
 
 def exit_jukebox
